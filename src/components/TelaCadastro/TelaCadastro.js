@@ -21,8 +21,8 @@ function TelaCadastro(props) {
           Confirmação da senha:
           <Input id="descricao" />
         </StyledLabel>
-        <SendButton >Cadastrar</SendButton>
-        <BackToLoginButton >Já possuo um cadastro</BackToLoginButton>
+        <SendButton onClick={props.trocarTelaCadastrado}>Cadastrar</SendButton>
+        <BackToLoginButton onClick={props.trocarTela}>Já possuo um cadastro</BackToLoginButton>
       </Form>
     </FormContainer>
   );
